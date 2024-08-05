@@ -1,5 +1,0 @@
- var motorNovo = leitor.quastionFloat('qual o tipo do seu motor? ')
- var rodasNovo = leitor.questionInt('qual o aro da roda do carro? ')
- var marcaNovo = leitor.question('qual a marca do carro? ')
- var corNovo = leitor.question('qual a cor do carro?')
- var kmsNovo = leior.quastionInt('qual a kilometragem máxima? ')
