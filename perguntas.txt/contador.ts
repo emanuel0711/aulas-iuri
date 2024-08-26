@@ -1,22 +1,20 @@
-const ask = require('readline-sync')
-
-class Contador {
-    private valor: number = 0;
-  
-    constructor() {
-      // Inicializa o contador com o valor 0
+  "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Contador = void 0;
+var Contador = /** @class */ (function () {
+    function Contador() {
+        this.contador = 0;
     }
-  
-    zerar(): void {
-      this.valor = 0;
-    }
-  
-    incrementar(): void {
-      this.valor++;
-    }
-  
-    Valor(): number {
-      return this.valor;
-    }
-  }
-  
+    Contador.prototype.zerar = function () {
+        this.contador = 0;
+    };
+    //++ (é igual a += 1) tbm tem o -- (é igual -= 1)
+    Contador.prototype.incrementar = function (number) {
+        this.contador += number;
+    };
+    Contador.prototype.valorAtual = function () {
+        return this.contador;
+    };
+    return Contador;
+}());
+exports.Contador = Contador;
